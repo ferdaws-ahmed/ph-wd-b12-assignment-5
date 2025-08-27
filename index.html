@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service</title>
+    <!-- css link -->
+     <link rel="stylesheet" href="style.css">
+
+
+
     <!-- tailwind cdn -->
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
     <!-- font awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+     <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class=" max-w-7xl m-auto ">
     
@@ -19,7 +32,7 @@
              <nav class="flex flex-col gap-5 justify-center  px-[60px] py-6 sm:flex-row  sm:justify-between  ">
                 <div class="flex flex-col sm:flex-row items-center gap-2  ">
                     <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="">
-                    <h1 class=" text-lg/5 font-bold text-[#006747] ">Emergency <br class="hidden sm:inline-block"> Service</h1>
+                    <h1 class="font-hind text-lg/5 font-bold text-[#006747] ">Emergency <br class="hidden sm:inline-block"> Service</h1>
                 </div>
 
 
@@ -43,12 +56,67 @@
         <!-- banner section -->
              <div class="flex flex-col justify-center items-center gap-3 text-white py-6 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] ">
                 <img class="w-[100px] h-[100px]" src="assets/logo.png" alt="">
-                <h1 class="text-3xl font-bold">Emergency Service Directory</h1>
-                <p class="text-sm">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+                <h1 class="text-3xl font-bold text-center">Emergency Service Directory</h1>
+                <p class=" font-hind text-sm text-center">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
              </div>
         <!-- banner section -->
      </header>
 
+     <!-- main section  -->
+      <main class="grid grid-cols-4" >
+         
+        <!-- main content section -->
+        <section class="bg-gray-100 grid grid-cols-3 col-span-3">
+         <div class="p-6">
+            <div class="flex items-center justify-between">
+                <div class="p-5 bg-[#FFE3E2] rounded-3xl">
+                    <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                </div>
+                <img class="w-6 h-6" src="assets/empty-heart.png" alt="">
+            </div>
+            <h1 class="font-hind font-bold text-lg">National Emergency Number</h1>
+            <p class="text-s">National Emergency</p>
+            <h2 class="font-bold text-2xl mt-3">999</h2>
+            <h6 class="text-xs bg-gray-300 inline-block px-3 py-2 rounded-2xl">All</h6><br>
+            <button><span></span>Copy</button>
+            <button><span></span>Call</button>
+
+         </div>
+         <div>
+            <h1>div-2</h1>
+         </div>
+         <div>
+            <h1>div-3</h1>
+         </div>
+         <div>
+            <h1>div-4</h1>
+         </div>
+         <div>
+            <h1>div-5</h1>
+         </div>
+         <div>
+            <h1>div-6</h1>
+         </div>
+         <div>
+            <h1>div-7</h1>
+         </div>
+         <div>
+            <h1>div-8</h1>
+         </div>
+         <div>
+            <h1>div-9</h1>
+         </div>
+         </section>
+
+         <!-- main content section -->
+
+
+         <!-- aside section -->
+         <aside class="bg-stone-50  col-span-1">
+            <h1>call history</h1>
+         </aside>
+         <!-- aside section -->
+      </main>
      <!-- main section  -->
 </body>
 </html>
