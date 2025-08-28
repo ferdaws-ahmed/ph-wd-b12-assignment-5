@@ -55,7 +55,7 @@ for(callBtn of getCallBtns){
         
         
         const callListHeading = this.parentNode.parentNode.children[1].innerText;
-        const callListSubHeading = this.parentNode.parentNode.children[2].innerText;
+        const callingNumber = this.parentNode.parentNode.children[3].innerText;
 
 
 
@@ -69,7 +69,7 @@ for(callBtn of getCallBtns){
         <div id="call-list" class="flex justify-between items-center mt-4 p-3 bg-gray-100 rounded-md">
                   <div>
                       <h1 class="font-bold text-sm ">${callListHeading}</h1>
-                      <p class= "text-xs">${callListSubHeading}</p>
+                      <p class= "text-xs">${callingNumber}</p>
                   </div>
                   <div class="text-sm flex-shrink-0 ">
                      ${timeFormate}
@@ -92,5 +92,31 @@ for(callBtn of getCallBtns){
     })
 }
 // function call button end ---- !!!!!
+
+
+
+
+// function copy button start ----->>
+     const copyBtns = document.getElementsByClassName('copy-btn');
+     for(const copyBtn of copyBtns){
+        copyBtn.addEventListener('click',async function(){
+            const copyElement = this.parentNode.parentNode.children[3].innerText;
+            try{
+                 await navigator.clipboard.writeText(copyElement);
+                 alert('copied')
+            }
+            catch{
+                alert('copy process failed.')
+            }
+
+
+           const copyCount = document.getElementById('copy-count');
+           const copyCountValue = parseInt(copyCount.innerText);
+
+           const currentCopy = copyCountValue + 1;
+           copyCount.innerText = currentCopy;
+        })
+     }
+// function copy button end ----->>
 
 
