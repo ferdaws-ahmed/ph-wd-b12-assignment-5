@@ -103,7 +103,7 @@ for(callBtn of getCallBtns){
             const copyElement = this.parentNode.parentNode.children[3].innerText;
             try{
                  await navigator.clipboard.writeText(copyElement);
-                 alert('copied')
+                 alert(`copied ${copyElement}`)
             }
             catch{
                 alert('copy process failed.')
